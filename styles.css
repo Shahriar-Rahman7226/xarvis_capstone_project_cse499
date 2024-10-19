@@ -307,6 +307,98 @@ footer p {
 
 
 
+/* Sign In Form Styles */
+
+.signin-form {
+    max-width: 500px; /* Increased width */
+    margin: 40px auto;
+    padding: 40px 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+    
+}
+
+
+
+.signup-link {
+    color: #dc4d37; /* Change this to your preferred color for the Sign Up link */
+}
+
+.signup-link:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    margin-right: 10px; /* Space between label and checkbox */
+}
+
+.remember-me input {
+    margin-left: 10px; /* Space between checkbox and label */
+}
+
+.forgot-password {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff3b3b;
+}
+
+
+
+
+
+
+
+
+
 
 
 

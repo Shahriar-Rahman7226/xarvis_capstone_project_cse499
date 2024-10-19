@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - LibraryP2P</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">LibraryP2P</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Sign In</h1>
+            <p>Please enter your credentials to sign in.</p>
+        </div>
+    </header>
+    
+    <div class="signin-form">
+        <h2>Sign In</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="cta-button">Sign In</button>
+        </form>
+        <p><a href="#" class="forgot-password">Forgot Password?</a></p> <!-- Forgot Password Link -->
+        <p>Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p> <!-- Sign Up Link -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LibraryP2P. All rights reserved.</p>
+    </footer>
+</body>
+</html>
