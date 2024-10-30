@@ -407,3 +407,162 @@ footer p {
 
 
 
+/* Contact Styles */
+.contact-info {
+    padding: 40px 30px;
+    text-align: center; /* Center all text within this section */
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between; /* Spreads items evenly across the row */
+    margin: 20px 0;
+    gap: 20px; /* Adds spacing between items */
+    flex-wrap: wrap; /* Allows wrapping if space is limited */
+}
+
+.contact-item {
+    flex: 1; /* Makes each item take an equal width */
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px; /* Constrains item width */
+}
+
+.contact-item i {
+    font-size: 40px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 80%; /* Adjust width for better readability on smaller screens */
+        max-width: none;
+    }
+}
+
+/* Optional Hover Effect */
+.contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Upload Styles */
+.upload-info {
+    padding: 40px 30px;
+    text-align: center; /* Center all text within this section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    min-height: 300px; /* Set a minimum height for the container */
+}
+
+.upload-info h2 {
+    color: #ff6b6b; /* Heading color */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center;
+    gap: 20px; /* Space between form elements */
+    margin: 20px auto; /* Center form */
+    max-width: 500px; /* Max width for the form */
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="file"],
+.upload-form textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+}
+
+.upload-form button {
+    background-color: #ff6b6b; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.upload-form button:hover {
+    background-color: #ff3b3b; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .upload-form {
+        width: 90%; /* Adjust width for better readability on smaller screens */
+    }
+}
+
+
+
+
+
+
