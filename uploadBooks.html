@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Book - LibraryP2P</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="#">LibraryP2P</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uploadBooks.html">Upload</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html" class="cta-button">Sign In</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Upload Books</h1>
+            <p> Upload Books and be a proud member</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="upload-info">
+            <h2>Upload a Book</h2>
+            <form class="upload-form">
+                <label for="title">Book Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter book title" required>
+
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" placeholder="Enter author name" required>
+
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" name="genre" placeholder="Enter genre" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" placeholder="Enter book description" required></textarea>
+
+                <label for="book-file">Upload Book File</label>
+                <input type="file" id="book-file" name="book-file" accept=".pdf,.epub" required>
+
+                <button type="submit" class="upload-button">Upload Book</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LibraryP2P. All rights reserved.</p>
+    </footer>
+</body>
+</html>
