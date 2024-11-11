@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+    
+    
+    <title>Peer-to-Peer Library Management System</title>
+
+  </head>
+
+
+
+  <body>
+
+    <header>
+      <nav>
+          <div class="logo"><a href="#">LibraryP2P</a></div>
+          <ul class="nav-links">
+
+              <li><a href="index.html">Home</a></li>
+              <li><a href="uploadBooks.html">Upload</a></li>
+              
+              
+              <li><a href="contact.html">Contact</a></li>
+
+              
+
+              <li><a href="search.html">Search</a></li>
+              
+              <li><a href="signin.html" class="cta-button">Sign In</a></li>
+          </ul>
+      </nav>
+      <div class="header-content">
+        <h1>Search Books</h1>
+        <p>Upload Share and Download Books from anywhere</p>
+    </div>
+      
+  </header>
+
+
+
+
+    <div class="container">
+      <!-- Left Menu -->
+      <div class="leftMenu">
+        <input type="text" placeholder="Search..." class="search" />
+        <h1>Categories :</h1>
+        <div class="cats">
+            <!-- Product category shown here by JavaScript code -->
+        </div>
+        
++      </div>
+      <!-- Product List -->
+      <div class="content">
+        <div class="products">
+          <!-- Each product are shown here by JavaScript code -->
+        </div>
+      </div>
+    </div>
+    <!-- JS File Connection -->
+    <script src="./filter.js"></script>
+    
+    <footer>
+      <p>&copy; 2024 LibraryP2P. All rights reserved.   </p>
+  </footer>
+
+
+
+
+  </body>
+</html>
