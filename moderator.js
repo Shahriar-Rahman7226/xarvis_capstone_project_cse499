@@ -111,7 +111,7 @@ const data = [
             <img src="${product.img}" alt="">
             <span class="name">${product.name}</span>
             <div class="buttons">
-              <button class="view-btn">View</button>
+              <a href="productDetail.html?id=${product.id}" class="view-btn">View</a>
               <button class="download-btn">Download</button>
               <button class="delete-btn">Delete</button>
             </div>
