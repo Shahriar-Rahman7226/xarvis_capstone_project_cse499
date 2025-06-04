@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Device Location</title>
+  <link rel="stylesheet" href="location.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <main class="location-container">
+    <div class="header-bar">
+        <a href="index.html" class="back-button" title="Back to Home">
+        <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1>Live Device Location</h1>
+    </div>
+
+    <div id="map" class="map"></div>
+    <p id="coords">Fetching your location...</p>
+
+    <div class="button-group">
+      <button class="location-btn"><i class="fas fa-directions"></i> Direction</button>
+      <button class="location-btn"><i class="fas fa-sim-card"></i> Switch to Offline Mode</button>
+      <button class="location-btn" onclick="location.reload()"><i class="fas fa-sync-alt"></i> Refresh Location</button>
+    </div>
+  </main>
+
+  <script>
+    const map = L.map('map').setView([23.8103, 90.4125], 13); // Default view (Dhaka)
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    let marker;
+
+    function updateMap(lat, lng) {
+      map.setView([lat, lng], 15);
+      if (marker) {
+        marker.setLatLng([lat, lng]);
+      } else {
+        marker = L.marker([lat, lng]).addTo(map).bindPopup("You are here!").openPopup();
+      }
+      document.getElementById("coords").innerText =
+        `Latitude: ${lat.toFixed(6)}, Longitude: ${lng.toFixed(6)}`;
+    }
+
+    if (navigator.geolocation) {
+      navigator.geolocation.watchPosition(
+        position => {
+          const { latitude, longitude } = position.coords;
+          updateMap(latitude, longitude);
+        },
+        error => {
+          document.getElementById("coords").innerText = "Unable to access location.";
+          console.error(error.message);
+        },
+        { enableHighAccuracy: true }
+      );
+    } else {
+      document.getElementById("coords").innerText =
+        "Geolocation is not supported by this browser.";
+    }
+  </script>
+</body>
+</html>
